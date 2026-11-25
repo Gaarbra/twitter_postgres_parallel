@@ -12,6 +12,7 @@ jobs:
     - name: setup python
       run: |
         pip3 install -r requirements.txt
+        sudo apt-get install -y parallel
     - name: docker
       run: |
         git submodule init
